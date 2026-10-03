@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Crème — кондитерская и кофейня в Махачкале</title>
+  <meta name="description" content="La Crème: свежие десерты и кофе в Махачкале. Ул. Ярагского, 94а. Ежедневно с 09:00 до 22:00.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="top">
+    <a href="#" class="logo">La Crème</a>
+    <nav>
+      <a href="#menu">Меню</a>
+      <a href="#photos">Фото</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <span class="status" id="status" aria-live="polite"></span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 aria-label="La Crème">
+        <span class="line"><span>La</span></span>
+        <span class="line"><span>Crème</span></span>
+      </h1>
+      <div class="hero-foot">
+        <p>Кондитерская и кофейня в Махачкале. Выпечку начинаем в 7 утра, чтобы к открытию на витрине было свежее.</p>
+        <div class="actions">
+          <a class="btn btn-solid magnetic" href="#menu">Смотреть меню</a>
+          <a class="btn magnetic" href="#contacts">Как нас найти</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2>Меню</h2>
+      <div class="menu-grid">
+        <div>
+          <h3>Кофе</h3>
+          <ul class="prices">
+            <li><span>Капучино</span><i></i><b>300 ₽</b></li>
+            <li><span>Флэт уайт</span><i></i><b>350 ₽</b></li>
+            <li><span>Раф классический</span><i></i><b>350 ₽</b></li>
+            <li><span>Американо</span><i></i><b>200 ₽</b></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Десерты</h3>
+          <p class="desserts">Около 25 десертов в постоянном меню. Что есть сегодня, видно на витрине.</p>
+          <!-- Хочешь список десертов? Добавь <ul class="prices"> по образцу блока "Кофе" -->
+        </div>
+      </div>
+    </section>
+
+    <section class="photos" id="photos">
+      <h2>Внутри</h2>
+      <!-- Положи фото в папку images/ и назови 1.jpg, 2.jpg, 3.jpg, 4.jpg -->
+      <div class="gallery">
+        <figure><img src="images/1.jpg" alt="Витрина с десертами La Crème" loading="lazy"></figure>
+        <figure><img src="images/2.jpg" alt="Кофе на барной стойке" loading="lazy"></figure>
+        <figure><img src="images/3.jpg" alt="Зал кофейни" loading="lazy"></figure>
+        <figure><img src="images/4.jpg" alt="Свежая выпечка" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <h2>Заходите</h2>
+      <dl>
+        <div><dt>Адрес</dt><dd>Махачкала, ул. Ярагского, 94а</dd></div>
+        <div><dt>Часы работы</dt><dd>Каждый день, 09:00–22:00</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79285054422">+7 (928) 505-44-22</a></dd></div>
+      </dl>
+      <a class="btn btn-solid magnetic" target="_blank" rel="noopener"
+         href="https://yandex.ru/maps/?text=%D0%9C%D0%B0%D1%85%D0%B0%D1%87%D0%BA%D0%B0%D0%BB%D0%B0%2C%20%D1%83%D0%BB.%20%D0%AF%D1%80%D0%B0%D0%B3%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2094%D0%B0">Открыть на карте</a>
+    </section>
+  </main>
+
+  <footer>© La Crème, Махачкала</footer>
+  <script src="script.js"></script>
+</body>
+</html>
